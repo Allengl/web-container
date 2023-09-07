@@ -5,13 +5,9 @@ import java.io.IOException;
 
 public class QueryRoomServlet implements Servlet {
 
-    public QueryRoomServlet() {
-        System.out.println("QueryRoomServlet is created");
-    }
-
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-        System.out.println("QueryRoomServlet init is created");
+        System.out.println("QueryRoomServlet init is called");
     }
 
     @Override

@@ -6,13 +6,9 @@ import java.io.IOException;
 public class BookRoomServlet implements Servlet {
     private DatabaseConnection databaseConnection;
 
-    public BookRoomServlet() {
-        System.out.println("BookRoomServlet is created");
-    }
-
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-        System.out.println("BookRoomServlet init is created");
+        System.out.println("BookRoomServlet init is called");
         databaseConnection = new DatabaseConnection();
         databaseConnection.connect();
     }

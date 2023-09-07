@@ -6,22 +6,22 @@
   <display-name>Archetype Created Web Application</display-name>
 
   <servlet>
-    <servlet-name>queryRoomSevlet</servlet-name>
+    <servlet-name>queryRoomServlet</servlet-name>
     <servlet-class>com.gl.hotel.QueryRoomServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>queryRoomSevlet</servlet-name>
-    <url-pattern>/queryroom</url-pattern>
+    <servlet-name>queryRoomServlet</servlet-name>
+    <url-pattern>/queryRoom</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>bookRoomSevlet</servlet-name>
+    <servlet-name>bookRoomServlet</servlet-name>
     <servlet-class>com.gl.hotel.BookRoomServlet</servlet-class>
 <!--    <load-on-startup>0</load-on-startup>-->
   </servlet>
   <servlet-mapping>
-    <servlet-name>bookRoomSevlet</servlet-name>
-    <url-pattern>/bookroom</url-pattern>
+    <servlet-name>bookRoomServlet</servlet-name>
+    <url-pattern>/bookRoom</url-pattern>
   </servlet-mapping>
 
 
