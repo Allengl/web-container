@@ -78,4 +78,40 @@
     <servlet-name>queryCookieServlet</servlet-name>
     <url-pattern>/cookie/query</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>com.gl.hotel.cookie.RegisterServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/cookie/register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.gl.hotel.cookie.LoginServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/cookie/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>queryEmptyRoomServlet</servlet-name>
+    <servlet-class>com.gl.hotel.cookie.QueryEmptyRoomServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>queryEmptyRoomServlet</servlet-name>
+    <url-pattern>/cookie/queryEmptyRoom</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>changePasswordServlet</servlet-name>
+    <servlet-class>com.gl.hotel.cookie.ChangePasswordServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>changePasswordServlet</servlet-name>
+    <url-pattern>/cookie/changePassword</url-pattern>
+  </servlet-mapping>
 </web-app>

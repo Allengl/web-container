@@ -6,15 +6,18 @@
 </head>
 <body>
 <h1>请输入用户信息进行注册</h1>
-<form action="/hotel/userRegister" method="post">
+<form action="/hotel/cookie/register" method="post">
     username:<input type="text" name="username"><br>
-    password:<input type="text" name="age"><br>
-    hobby:
-        sing:<input type="checkbox" name="hobby" value="sing">
-        dance:<input type="checkbox" name="hobby" value="dance">
-        rap:<input type="checkbox" name="hobby" value="rap">
-        basketball:<input type="checkbox" name="hobby" value="basketball">
+    password:<input type="text" name="password"><br>
     <input type="submit" value="注册">
+</form>
+
+<h1>修改密码</h1>
+<form action="/hotel/cookie/changePassword" method="post">
+    username:<input type="text" name="username"><br>
+    oldPassword:<input type="text" name="oldPassword"><br>
+    newPassword:<input type="text" name="newPassword"><br>
+    <input type="submit" value="修改密码">
 </form>
 </body>
 </html>
