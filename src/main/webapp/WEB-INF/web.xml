@@ -12,7 +12,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>queryRoomServlet</servlet-name>
-    <url-pattern>/queryRoom</url-pattern>
+    <url-pattern>/queryroom</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>bookRoomServlet</servlet-name>
@@ -21,7 +21,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>bookRoomServlet</servlet-name>
-    <url-pattern>/bookRoom</url-pattern>
+    <url-pattern>/bookroom</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>getServlet</servlet-name>
@@ -49,5 +49,33 @@
   <servlet-mapping>
     <servlet-name>userRegisterServlet</servlet-name>
     <url-pattern>/userRegister</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>createCookieServlet</servlet-name>
+    <servlet-class>com.gl.hotel.cookie.CreateCookieServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createCookieServlet</servlet-name>
+    <url-pattern>/cookie/create</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>useCookieServlet</servlet-name>
+    <servlet-class>com.gl.hotel.cookie.UseCookieServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>useCookieServlet</servlet-name>
+    <url-pattern>/cookie/use</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>queryCookieServlet</servlet-name>
+    <servlet-class>com.gl.hotel.cookie.QueryCookieServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>queryCookieServlet</servlet-name>
+    <url-pattern>/cookie/query</url-pattern>
   </servlet-mapping>
 </web-app>
