@@ -41,5 +41,13 @@
     <servlet-name>postServlet</servlet-name>
     <url-pattern>/postServlet</url-pattern>
   </servlet-mapping>
-
+  <servlet>
+    <servlet-name>userRegisterServlet</servlet-name>
+    <servlet-class>com.gl.hotel.UserRegisterServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userRegisterServlet</servlet-name>
+    <url-pattern>/userRegister</url-pattern>
+  </servlet-mapping>
 </web-app>
