@@ -10,8 +10,6 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class WebContainerTest {
-
-
     private  List<ServletConfiguration> buildConfiguration() {
         // 不配置 loadOnStartup
         ServletConfiguration bookRoomServletConfiguration = new ServletConfiguration(

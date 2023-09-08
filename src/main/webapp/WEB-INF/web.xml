@@ -23,7 +23,23 @@
     <servlet-name>bookRoomServlet</servlet-name>
     <url-pattern>/bookRoom</url-pattern>
   </servlet-mapping>
-
-
+  <servlet>
+    <servlet-name>getServlet</servlet-name>
+    <servlet-class>com.gl.hotel.GetServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getServlet</servlet-name>
+    <url-pattern>/getServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>postServlet</servlet-name>
+    <servlet-class>com.gl.hotel.PostServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>postServlet</servlet-name>
+    <url-pattern>/postServlet</url-pattern>
+  </servlet-mapping>
 
 </web-app>
