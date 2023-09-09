@@ -159,4 +159,49 @@
     <servlet-name>queryCartServlet</servlet-name>
     <url-pattern>/session/queryCart</url-pattern>
   </servlet-mapping>
+  <filter>
+    <filter-name> queryCartServlet</filter-name>
+    <filter-class>com.gl.hotel.filter.MyFilter1</filter-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </filter>
+  <filter-mapping>
+    <filter-name>queryCartServlet</filter-name>
+    <url-pattern>/session/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>myFilter1</filter-name>
+    <filter-class>com.gl.hotel.filter.MyFilter1</filter-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </filter>
+  <filter-mapping>
+    <filter-name>myFilter1</filter-name>
+    <url-pattern>/session/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>myFilter2</filter-name>
+    <filter-class>com.gl.hotel.filter.MyFilter2</filter-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </filter>
+  <filter-mapping>
+    <filter-name>myFilter2</filter-name>
+    <url-pattern>/session/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>myFilter3</filter-name>
+    <filter-class>com.gl.hotel.filter.MyFilter3</filter-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </filter>
+  <filter-mapping>
+    <filter-name>myFilter3</filter-name>
+    <url-pattern>/session/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>loginFilter</filter-name>
+    <filter-class>com.gl.hotel.filter.LoginFilter</filter-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </filter>
+  <filter-mapping>
+    <filter-name>loginFilter</filter-name>
+    <url-pattern>/cookie/*</url-pattern>
+  </filter-mapping>
 </web-app>

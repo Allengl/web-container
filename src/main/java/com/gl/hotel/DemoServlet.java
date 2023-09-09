@@ -14,7 +14,7 @@ public class DemoServlet extends MyGenericServlet{
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-
+        System.out.println("DemoServlet service");
     }
 
 }

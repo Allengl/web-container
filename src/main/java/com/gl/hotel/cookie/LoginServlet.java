@@ -13,7 +13,7 @@ public class LoginServlet extends HttpServlet {
 
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        if (PasswordClass.isUserRegistered(username, password)) {
+        if (PasswordClass.verify(username, password)) {
             Cookie cookie = new Cookie("username", username);
             cookie.setPath(req.getContextPath());
             cookie.setHttpOnly(true);

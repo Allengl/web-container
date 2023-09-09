@@ -13,7 +13,7 @@ public class ChangePasswordServlet extends HttpServlet {
         String username = req.getParameter("username");
         String oldPassword= req.getParameter("oldPassword");
         String newPassword= req.getParameter("newPassword");
-        if(PasswordClass.isUserRegistered(username,oldPassword)) {
+        if(PasswordClass.verify(username,oldPassword)) {
             // 用户名和密码匹配，修改密码
             PasswordClass.registerUser(username, newPassword);
             resp.getWriter().write("change password success");

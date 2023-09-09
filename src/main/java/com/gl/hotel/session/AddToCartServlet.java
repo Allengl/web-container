@@ -12,6 +12,7 @@ import java.util.List;
 public class AddToCartServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("AddToCartServlet is called");
         HttpSession session = req.getSession(true);
         String product = req.getParameter("product");
         Object obj = session.getAttribute("cart");
