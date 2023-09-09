@@ -114,4 +114,31 @@
     <servlet-name>changePasswordServlet</servlet-name>
     <url-pattern>/cookie/changePassword</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>createSessionServlet</servlet-name>
+    <servlet-class>com.gl.hotel.session.CreateSessionServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createSessionServlet</servlet-name>
+    <url-pattern>/session/create</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>querySessionServlet</servlet-name>
+    <servlet-class>com.gl.hotel.session.QuerySessionServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>querySessionServlet</servlet-name>
+    <url-pattern>/session/query</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>invalidSessionServlet</servlet-name>
+    <servlet-class>com.gl.hotel.session.InvalidSessionServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>invalidSessionServlet</servlet-name>
+    <url-pattern>/session/invalid</url-pattern>
+  </servlet-mapping>
 </web-app>
