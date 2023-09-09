@@ -141,4 +141,22 @@
     <servlet-name>invalidSessionServlet</servlet-name>
     <url-pattern>/session/invalid</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>addToCartServlet</servlet-name>
+    <servlet-class>com.gl.hotel.session.AddToCartServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addToCartServlet</servlet-name>
+    <url-pattern>/session/addToCart</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name> queryCartServlet</servlet-name>
+    <servlet-class>com.gl.hotel.session.QueryCartServlet</servlet-class>
+    <!--    <load-on-startup>0</load-on-startup>-->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>queryCartServlet</servlet-name>
+    <url-pattern>/session/queryCart</url-pattern>
+  </servlet-mapping>
 </web-app>
