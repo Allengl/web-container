@@ -168,15 +168,15 @@
     <servlet-name>queryOderServlet</servlet-name>
     <url-pattern>/cookie/queryOrder</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <servlet-name> queryOnlineCountServlet</servlet-name>
-    <servlet-class>com.gl.hotel.cookie.QueryOnlineCountServlet</servlet-class>
-    <!--    <load-on-startup>0</load-on-startup>-->
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>queryOnlineCountServlet</servlet-name>
-    <url-pattern>/cookie/queryOnlineCount</url-pattern>
-  </servlet-mapping>
+<!--  <servlet>-->
+<!--    <servlet-name> queryOnlineCountServlet</servlet-name>-->
+<!--    <servlet-class>com.gl.hotel.cookie.QueryOnlineCountServlet</servlet-class>-->
+<!--    &lt;!&ndash;    <load-on-startup>0</load-on-startup>&ndash;&gt;-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>queryOnlineCountServlet</servlet-name>-->
+<!--    <url-pattern>/cookie/queryOnlineCount</url-pattern>-->
+<!--  </servlet-mapping>-->
   <filter>
     <filter-name> queryCartServlet</filter-name>
     <filter-class>com.gl.hotel.filter.MyFilter1</filter-class>
@@ -221,9 +221,9 @@
     <filter-name>loginFilter</filter-name>
     <url-pattern>/cookie/*</url-pattern>
   </filter-mapping>
-  <listener>
-    <listener-class>com.gl.hotel.listener.MyListener</listener-class>
-  </listener>
+<!--  <listener>-->
+<!--    <listener-class>com.gl.hotel.listener.MyListener</listener-class>-->
+<!--  </listener>-->
   <listener>
     <listener-class>com.gl.hotel.listener.MyHttpSessionListener</listener-class>
   </listener>
